@@ -1,0 +1,41 @@
+{
+  "name": "dsh-lang-korean",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Korean language pack for DeepSeek Harness: the interface copy and built-in plugin titles and descriptions, each pack switchable in Settings.",
+  "license": "MIT",
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "locale", "korean", "i18n"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/client.js",
+    "lib/client.*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md"
+  ],
+  "scripts": {
+    "extract": "node scripts/extract.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  }
+}

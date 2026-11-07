@@ -1,0 +1,1922 @@
+{
+ "package": "@michengai/dsh-skills-manager",
+ "version": "1.2.35",
+ "mode": "dictionaries",
+ "ui": {
+  "skills-manager": {
+   "summary.group.one": {
+    "en": "{count} skill",
+    "zh": "{count} 个技能"
+   },
+   "summary.group.other": {
+    "en": "{count} skills",
+    "zh": "{count} 个技能"
+   },
+   "format.locale": {
+    "en": "en-US",
+    "zh": "zh-CN"
+   },
+   "format.warningSeparator": {
+    "en": "; ",
+    "zh": "；"
+   },
+   "title": {
+    "en": "Skills",
+    "zh": "技能"
+   },
+   "desc": {
+    "en": "Load and manage Agent Skills on this computer in one place.",
+    "zh": "统一加载和管理本机 Agent Skills。"
+   },
+   "link.project": {
+    "en": "GitHub",
+    "zh": "GitHub"
+   },
+   "link.feedback": {
+    "en": "Issues",
+    "zh": "问题反馈"
+   },
+   "btn.create": {
+    "en": "Create skill",
+    "zh": "创建技能"
+   },
+   "btn.import": {
+    "en": "Import",
+    "zh": "导入"
+   },
+   "btn.refresh": {
+    "en": "Refresh",
+    "zh": "刷新"
+   },
+   "btn.cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "btn.close": {
+    "en": "Close",
+    "zh": "关闭"
+   },
+   "btn.detail": {
+    "en": "View details",
+    "zh": "查看详情"
+   },
+   "btn.more": {
+    "en": "More",
+    "zh": "更多"
+   },
+   "btn.trash": {
+    "en": "Move to trash",
+    "zh": "移到回收站"
+   },
+   "btn.restore": {
+    "en": "Restore",
+    "zh": "恢复"
+   },
+   "btn.delete.forever": {
+    "en": "Delete forever",
+    "zh": "永久删除"
+   },
+   "btn.file.pick": {
+    "en": "Choose file",
+    "zh": "选择文件"
+   },
+   "btn.folder.pick": {
+    "en": "Choose folder",
+    "zh": "选择文件夹"
+   },
+   "btn.import.now": {
+    "en": "Install",
+    "zh": "安装"
+   },
+   "btn.create.now": {
+    "en": "Create skill",
+    "zh": "创建技能"
+   },
+   "btn.disable": {
+    "en": "Disable",
+    "zh": "停用"
+   },
+   "btn.enable": {
+    "en": "Enable",
+    "zh": "启用"
+   },
+   "btn.confirm": {
+    "en": "Confirm",
+    "zh": "确定"
+   },
+   "status.enabled": {
+    "en": "Enabled",
+    "zh": "已启用"
+   },
+   "status.disabled": {
+    "en": "Disabled",
+    "zh": "已停用"
+   },
+   "status.invalid": {
+    "en": "Needs attention",
+    "zh": "诊断异常"
+   },
+   "status.shadowed": {
+    "en": "Shadowed",
+    "zh": "被覆盖"
+   },
+   "summary.total.one": {
+    "en": "{count} skill",
+    "zh": "{count} 个技能"
+   },
+   "summary.total.other": {
+    "en": "{count} skills",
+    "zh": "{count} 个技能"
+   },
+   "summary.enabled.one": {
+    "en": "{count} enabled",
+    "zh": "{count} 个已启用"
+   },
+   "summary.enabled.other": {
+    "en": "{count} enabled",
+    "zh": "{count} 个已启用"
+   },
+   "summary.disabled.one": {
+    "en": "{count} disabled",
+    "zh": "{count} 个已停用"
+   },
+   "summary.disabled.other": {
+    "en": "{count} disabled",
+    "zh": "{count} 个已停用"
+   },
+   "summary.shadowed.one": {
+    "en": "{count} shadowed",
+    "zh": "{count} 个被覆盖"
+   },
+   "summary.shadowed.other": {
+    "en": "{count} shadowed",
+    "zh": "{count} 个被覆盖"
+   },
+   "summary.invalid.one": {
+    "en": "{count} diagnostic",
+    "zh": "{count} 个诊断异常"
+   },
+   "summary.invalid.other": {
+    "en": "{count} diagnostics",
+    "zh": "{count} 个诊断异常"
+   },
+   "table.skill": {
+    "en": "Skill name and description",
+    "zh": "技能名称与描述"
+   },
+   "table.status": {
+    "en": "Invocation status",
+    "zh": "调用状态"
+   },
+   "filter.workspace": {
+    "en": "Workspace",
+    "zh": "工作区"
+   },
+   "filter.source": {
+    "en": "Source",
+    "zh": "来源"
+   },
+   "filter.all": {
+    "en": "All sources",
+    "zh": "全部来源"
+   },
+   "filter.option": {
+    "en": "{name} ({count})",
+    "zh": "{name}（{count}）"
+   },
+   "search": {
+    "en": "Search",
+    "zh": "搜索"
+   },
+   "search.placeholder": {
+    "en": "Search skill names, descriptions or notes",
+    "zh": "搜索技能名称、描述或备注"
+   },
+   "search.clear": {
+    "en": "Clear search",
+    "zh": "清除搜索"
+   },
+   "empty.search": {
+    "en": "No matching skills.",
+    "zh": "没有匹配的技能。"
+   },
+   "empty.source": {
+    "en": "This source does not exist or has no skills yet.",
+    "zh": "该来源目录不存在或暂时没有技能。"
+   },
+   "loading": {
+    "en": "Loading skills…",
+    "zh": "正在加载技能…"
+   },
+   "note.missing": {
+    "en": "No description provided",
+    "zh": "未提供简介"
+   },
+   "skill.linked": {
+    "en": "External directory link, read-only",
+    "zh": "外部目录链接，只读"
+   },
+   "source.toggle": {
+    "en": "Toggle source",
+    "zh": "启停来源"
+   },
+   "skill.toggle": {
+    "en": "Toggle skill",
+    "zh": "启停技能"
+   },
+   "category.toggle": {
+    "en": "Toggle category",
+    "zh": "启停分类"
+   },
+   "category.create": {
+    "en": "New category",
+    "zh": "新建分类"
+   },
+   "category.uncategorized": {
+    "en": "Uncategorized",
+    "zh": "未分类"
+   },
+   "category.assign": {
+    "en": "Move to {name}",
+    "zh": "归入{name}"
+   },
+   "category.rename": {
+    "en": "Rename",
+    "zh": "重命名"
+   },
+   "category.delete": {
+    "en": "Delete category",
+    "zh": "删除分类"
+   },
+   "category.note": {
+    "en": "Categories stay in this source and do not move files.",
+    "zh": "分类只记在这个来源里，不移动文件。"
+   },
+   "category.name": {
+    "en": "Category name",
+    "zh": "分类名称"
+   },
+   "category.empty": {
+    "en": "No skills yet. Use More on a skill to place it here.",
+    "zh": "还没有技能。从条目的「更多」归入。"
+   },
+   "category.progress": {
+    "en": "{count} · {enabled}/{usable} enabled",
+    "zh": "{count} 项 · {enabled}/{usable} 启用"
+   },
+   "category.actions": {
+    "en": "Category actions",
+    "zh": "分类操作"
+   },
+   "category.created": {
+    "en": "Added category “{name}”. No directory was created.",
+    "zh": "已添加分类「{name}」。文件没有新建目录。"
+   },
+   "category.renamed": {
+    "en": "Renamed. Skill file names are unchanged.",
+    "zh": "已重命名。技能文件名没有变化。"
+   },
+   "category.deleted": {
+    "en": "Deleted category “{name}”. Skills returned to Uncategorized and were not trashed.",
+    "zh": "已删除分类「{name}」。技能回到未分类，没有进回收站。"
+   },
+   "category.assigned": {
+    "en": "Moved {name} to “{category}”. The file was not moved.",
+    "zh": "已将 {name} 归入「{category}」。文件没有移动。"
+   },
+   "category.dragTip": {
+    "en": "Drag to reorder or move to another category",
+    "zh": "拖拽调整顺序或移动到其他分类"
+   },
+   "category.moved": {
+    "en": "Updated the category or order for {name}.",
+    "zh": "已调整技能 {name} 的分类或顺序。"
+   },
+   "confirm.category.title": {
+    "en": "Delete category?",
+    "zh": "删除分类？"
+   },
+   "confirm.category.desc": {
+    "en": "“{name}” will be removed. Its skills return to Uncategorized. Files are not moved.",
+    "zh": "「{name}」会消失，里面的技能回到未分类。文件不会移动。"
+   },
+   "error.category.duplicate": {
+    "en": "A category with this name already exists: {name}",
+    "zh": "已有同名分类: {name}"
+   },
+   "error.category.name": {
+    "en": "Category name is required and must be at most 24 characters",
+    "zh": "分类名称不能为空，且不能超过 24 个字符"
+   },
+   "error.category.notFound": {
+    "en": "Category not found",
+    "zh": "分类不存在"
+   },
+   "error.category.root": {
+    "en": "Skill source not found: {root}",
+    "zh": "技能来源不存在: {root}"
+   },
+   "error.category.position": {
+    "en": "Invalid skill ordering position",
+    "zh": "技能排序位置无效"
+   },
+   "error.category.target": {
+    "en": "The target skill is not in the destination category",
+    "zh": "排序目标不属于目标分类"
+   },
+   "detail.title": {
+    "en": "Skill details",
+    "zh": "技能详情"
+   },
+   "detail.description": {
+    "en": "Description",
+    "zh": "简介"
+   },
+   "detail.customNote": {
+    "en": "Custom note",
+    "zh": "自定义简介"
+   },
+   "detail.document": {
+    "en": "SKILL.md",
+    "zh": "SKILL.md"
+   },
+   "detail.body": {
+    "en": "Body",
+    "zh": "正文"
+   },
+   "detail.frontmatter": {
+    "en": "Frontmatter",
+    "zh": "Frontmatter"
+   },
+   "detail.diagnostics": {
+    "en": "Diagnostics",
+    "zh": "诊断"
+   },
+   "detail.path": {
+    "en": "Source file",
+    "zh": "源文件"
+   },
+   "detail.noIssues": {
+    "en": "No diagnostic issues found.",
+    "zh": "未发现诊断问题。"
+   },
+   "detail.copyBody": {
+    "en": "Copy body",
+    "zh": "复制正文"
+   },
+   "detail.copied": {
+    "en": "Copied",
+    "zh": "已复制"
+   },
+   "detail.copyFailed": {
+    "en": "Copy failed",
+    "zh": "复制失败"
+   },
+   "skill.editNote": {
+    "en": "Edit note",
+    "zh": "编辑备注"
+   },
+   "note.title": {
+    "en": "Custom description / Note",
+    "zh": "自定义简介 / 备注"
+   },
+   "note.label": {
+    "en": "Note",
+    "zh": "备注内容"
+   },
+   "note.placeholder": {
+    "en": "Record what this skill does and when to use it…",
+    "zh": "记录这个技能是干嘛的、什么时候用…"
+   },
+   "note.help": {
+    "en": "Saved in the plugin display layer without modifying SKILL.md. Clear to revert to original description.",
+    "zh": "保存在插件内部显示层，不修改原 SKILL.md。清空可还原为原简介。"
+   },
+   "note.clear": {
+    "en": "Clear",
+    "zh": "清空"
+   },
+   "note.updated": {
+    "en": "Updated custom note for “{name}”.",
+    "zh": "已更新「{name}」的自定义简介。"
+   },
+   "note.cleared": {
+    "en": "Cleared custom note for “{name}”.",
+    "zh": "已清除「{name}」的自定义简介。"
+   },
+   "error.note.root": {
+    "en": "Skill source not found: {root}",
+    "zh": "技能来源不存在: {root}"
+   },
+   "error.note.tooLarge": {
+    "en": "Custom note is too long (maximum {max} characters)",
+    "zh": "自定义简介过长（最多 {max} 个字符）"
+   },
+   "create.title": {
+    "en": "Create skill",
+    "zh": "创建技能"
+   },
+   "create.name": {
+    "en": "Name",
+    "zh": "名称"
+   },
+   "create.name.placeholder": {
+    "en": "e.g. code-review-helper",
+    "zh": "例如 code-review-helper"
+   },
+   "create.description": {
+    "en": "Description",
+    "zh": "简介"
+   },
+   "create.description.placeholder": {
+    "en": "One sentence describing when to use it",
+    "zh": "一句话说明什么时候使用"
+   },
+   "create.body": {
+    "en": "Body (Markdown)",
+    "zh": "正文（Markdown）"
+   },
+   "create.body.placeholder": {
+    "en": "Write the instructions, steps, and boundaries…",
+    "zh": "写下技能要遵循的指令、步骤和边界…"
+   },
+   "create.chat.note": {
+    "en": "Created skills are not linked to repository updates, and no source file is modified.",
+    "zh": "创建的技能不会挂仓库更新，也不会修改原文件。"
+   },
+   "import.title": {
+    "en": "Import skill",
+    "zh": "导入技能"
+   },
+   "upload.drop.title": {
+    "en": "Drop a skill here",
+    "zh": "拖拽技能到此处"
+   },
+   "upload.drop.copy": {
+    "en": "Supports .zip, a skill folder, or one SKILL.md",
+    "zh": "支持 .zip、技能文件夹或单个 SKILL.md"
+   },
+   "upload.selected.one": {
+    "en": "{count} file · {size}",
+    "zh": "{count} 个文件 · {size}"
+   },
+   "upload.selected.other": {
+    "en": "{count} files · {size}",
+    "zh": "{count} 个文件 · {size}"
+   },
+   "upload.remove": {
+    "en": "Remove selection",
+    "zh": "移除所选内容"
+   },
+   "upload.requirements": {
+    "en": "File requirements",
+    "zh": "文件要求"
+   },
+   "upload.requirement.skill": {
+    "en": "Archives and folders must contain SKILL.md",
+    "zh": "压缩包或文件夹需包含 SKILL.md"
+   },
+   "upload.requirement.frontmatter": {
+    "en": "SKILL.md must include a YAML name and description",
+    "zh": "SKILL.md 需包含 YAML 格式的技能名称和描述"
+   },
+   "upload.requirement.copy": {
+    "en": "Import copies all content and never modifies the source",
+    "zh": "导入时复制完整内容，不修改原始来源"
+   },
+   "upload.importing": {
+    "en": "Installing…",
+    "zh": "正在安装…"
+   },
+   "status.selected": {
+    "en": "Selected",
+    "zh": "已选择"
+   },
+   "select.file.invalid": {
+    "en": "Choose a .zip archive or one SKILL.md.",
+    "zh": "请选择 .zip 或单个 SKILL.md。"
+   },
+   "select.folder.invalid": {
+    "en": "No SKILL.md was found in the selected folder.",
+    "zh": "所选文件夹中没有找到 SKILL.md。"
+   },
+   "error.browse.absolute": {
+    "en": "Folder path must be absolute: {path}",
+    "zh": "目录路径必须是绝对路径：{path}"
+   },
+   "error.browse.unreadable": {
+    "en": "Could not read folder: {path}",
+    "zh": "无法读取目录：{path}"
+   },
+   "error.browse.notDirectory": {
+    "en": "Not a folder: {path}",
+    "zh": "不是目录：{path}"
+   },
+   "trash.title": {
+    "en": "Trash",
+    "zh": "回收站"
+   },
+   "trash.empty": {
+    "en": "Trash is empty.",
+    "zh": "回收站为空。"
+   },
+   "trash.deletedAt": {
+    "en": "Deleted {time}",
+    "zh": "删除于 {time}"
+   },
+   "trash.source": {
+    "en": "Source: {source}",
+    "zh": "来源：{source}"
+   },
+   "confirm.trash.title": {
+    "en": "Move to trash?",
+    "zh": "移到回收站？"
+   },
+   "confirm.trash.desc": {
+    "en": "“{name}” will move out of its current skill source and can be restored to the same location later.",
+    "zh": "“{name}”将从当前技能来源移入回收站，之后可以恢复到原位置。"
+   },
+   "confirm.delete.title": {
+    "en": "Delete forever?",
+    "zh": "永久删除？"
+   },
+   "confirm.delete.desc": {
+    "en": "“{name}” will be permanently deleted from trash and cannot be recovered.",
+    "zh": "“{name}”将从回收站永久删除，无法恢复。"
+   },
+   "result.created": {
+    "en": "Created skill: {name}",
+    "zh": "已创建技能：{name}"
+   },
+   "result.imported": {
+    "en": "Import complete: {names}",
+    "zh": "导入完成：{names}"
+   },
+   "result.importPartial": {
+    "en": "Imported: {imported}; skipped existing skills: {skipped}",
+    "zh": "已导入：{imported}；已跳过同名技能：{skipped}"
+   },
+   "result.importSkipped": {
+    "en": "No skills were imported; existing skills were skipped: {names}",
+    "zh": "未导入任何技能；已跳过同名技能：{names}"
+   },
+   "result.importEmpty": {
+    "en": "No skills were imported.",
+    "zh": "未导入任何技能。"
+   },
+   "result.importWarnings": {
+    "en": "{result}; warnings: {warnings}",
+    "zh": "{result}；警告：{warnings}"
+   },
+   "result.restored": {
+    "en": "Restored skill: {name}",
+    "zh": "已恢复技能：{name}"
+   },
+   "result.trashed": {
+    "en": "Moved to trash: {name}",
+    "zh": "已移到回收站：{name}"
+   },
+   "result.deleted": {
+    "en": "Permanently deleted: {name}",
+    "zh": "已永久删除：{name}"
+   },
+   "result.updated": {
+    "en": "Status updated.",
+    "zh": "状态已更新。"
+   },
+   "error.action": {
+    "en": "Action failed: {error}",
+    "zh": "操作失败：{error}"
+   },
+   "warning.scan.truncated": {
+    "en": "Some skills were not shown because the directory is too large or deeply nested: {path}",
+    "zh": "技能目录较大或嵌套过深，部分技能未显示：{path}"
+   },
+   "warning.state.invalid": {
+    "en": "The manager state file could not be read; all skills are disabled and state writes are blocked until it is repaired: {path}",
+    "zh": "技能管理器状态文件不可读；所有技能已安全停用，修复文件前不会覆盖状态：{path}"
+   },
+   "warning.backupUncleaned": {
+    "en": "Old version backup was not cleaned up: {path} ({error})",
+    "zh": "旧版本备份未清理：{path}（{error}）"
+   },
+   "warning.project.missing": {
+    "en": "The workspace directory does not exist and may have been moved or deleted: {path}",
+    "zh": "工作区目录不存在，可能已被移动或删除：{path}"
+   },
+   "warning.project.unreadable": {
+    "en": "No permission to read the workspace directory: {path} ({code})",
+    "zh": "无权限读取工作区目录：{path}（{code}）"
+   },
+   "warning.project.unavailable": {
+    "en": "The active workspace could not be read from the host, so its project skills are hidden: {path}",
+    "zh": "无法从宿主读取活动工作区，项目技能未显示：{path}"
+   },
+   "error.root.readonly": {
+    "en": "This source does not allow {action}",
+    "zh": "该来源不允许{action}"
+   },
+   "error.root.unknown": {
+    "en": "Unknown skill source: {root}",
+    "zh": "未知技能来源：{root}"
+   },
+   "error.workspace.unregistered": {
+    "en": "Select a registered workspace.",
+    "zh": "请选择已登记的工作区。"
+   },
+   "error.workspace.unavailable": {
+    "en": "Workspace directory is unavailable: {path}",
+    "zh": "工作区目录不可用：{path}"
+   },
+   "error.root.unsafe": {
+    "en": "The project skill directory is unsafe, so the write was refused: {path}",
+    "zh": "项目技能目录不安全，拒绝写入：{path}"
+   },
+   "error.skill.notFound": {
+    "en": "Skill not found: {name}",
+    "zh": "技能不存在: {name}"
+   },
+   "error.skill.linked": {
+    "en": "This directory link cannot be deleted or overwritten: {path}",
+    "zh": "目录链接不能删除或覆盖：{path}"
+   },
+   "error.skill.noFrontmatter": {
+    "en": "Skill lacks complete frontmatter, cannot {action}: {name}",
+    "zh": "技能缺少完整 frontmatter，无法{action}: {name}"
+   },
+   "error.skill.notLoadable": {
+    "en": "Skill structure is incomplete, cannot {action}: {name}",
+    "zh": "技能结构不完整，无法{action}: {name}"
+   },
+   "error.source.notFound": {
+    "en": "Path does not exist: {path}",
+    "zh": "路径不存在: {path}"
+   },
+   "error.source.symlink": {
+    "en": "Skill sources containing symbolic links are not supported: {path}",
+    "zh": "不支持包含符号链接的 skill 来源: {path}"
+   },
+   "error.source.unrecognized": {
+    "en": "Unrecognized skill source: {path}",
+    "zh": "无法识别的 skill 来源: {path}"
+   },
+   "error.source.tooDeep": {
+    "en": "Skill source directory depth exceeds {depth} levels: {path}",
+    "zh": "skill 来源目录层级超过 {depth} 层: {path}"
+   },
+   "error.import.overlap": {
+    "en": "Import source cannot be the same as, contain, or be inside the DSH skills directory",
+    "zh": "导入来源不能与 DSH 技能目录相同、包含或位于其中"
+   },
+   "error.import.emptySource": {
+    "en": "No skill entries found in the directory: {path}",
+    "zh": "目录下未找到任何 skill 条目: {path}"
+   },
+   "error.import.invalidName": {
+    "en": "Cannot generate a valid kebab-case name (original: {name})",
+    "zh": "无法生成合法 kebab-case 名称（原始名: {name}）"
+   },
+   "error.import.duplicateName": {
+    "en": "Batch source contains duplicate skill names: {name}",
+    "zh": "批量来源中存在多个同名技能: {name}"
+   },
+   "error.import.failed": {
+    "en": "Import failed",
+    "zh": "导入失败"
+   },
+   "error.import.rollbackFailed": {
+    "en": "Overwrite import rollback failed; backups kept at: {path} ({error})",
+    "zh": "覆盖导入回滚失败，备份保留在: {path}（{error}）"
+   },
+   "error.upload.path": {
+    "en": "Upload contains an invalid path: {path}",
+    "zh": "上传内容包含非法路径：{path}"
+   },
+   "error.upload.encoding": {
+    "en": "Upload encoding is invalid",
+    "zh": "上传内容编码无效"
+   },
+   "error.upload.empty": {
+    "en": "Upload is empty",
+    "zh": "上传内容为空"
+   },
+   "error.upload.tooMany": {
+    "en": "Too many uploaded files; maximum {limit}",
+    "zh": "上传文件过多，最多 {limit} 个"
+   },
+   "error.upload.tooLarge": {
+    "en": "Upload is too large; limit {limit} bytes",
+    "zh": "上传内容过大，限制为 {limit} 字节"
+   },
+   "error.upload.archiveTooLarge": {
+    "en": "ZIP archive is too large; limit {limit} bytes",
+    "zh": "ZIP 压缩包过大，限制为 {limit} 字节"
+   },
+   "error.upload.duplicate": {
+    "en": "Upload contains a duplicate path: {path}",
+    "zh": "上传内容包含重复路径：{path}"
+   },
+   "error.upload.zipInvalid": {
+    "en": "ZIP archive could not be extracted",
+    "zh": "ZIP 压缩包无法解压"
+   },
+   "error.trash.notFound": {
+    "en": "Trash item not found: {id}",
+    "zh": "回收站条目不存在: {id}"
+   },
+   "error.trash.conflict": {
+    "en": "Cannot restore because a skill with the same name exists: {name}",
+    "zh": "无法恢复，同名技能已存在: {name}"
+   },
+   "error.trash.invalid": {
+    "en": "Invalid trash item path: {id}",
+    "zh": "回收站条目路径非法: {id}"
+   },
+   "error.trash.projectUnavailable": {
+    "en": "The original project is not an active workspace, so this skill cannot be restored: {path}",
+    "zh": "原项目当前不在活动工作区中，无法恢复：{path}"
+   },
+   "error.trash.rollbackFailed": {
+    "en": "Move-to-trash rollback failed; unrecovered content was kept at: {path} ({error})",
+    "zh": "移入回收站回滚失败，未恢复内容保留在: {path}（{error}）"
+   },
+   "error.state.invalid": {
+    "en": "The manager state file could not be read, so overwriting it was refused: {path}",
+    "zh": "技能管理器状态文件不可读，已拒绝覆盖：{path}"
+   },
+   "error.create.descriptionRequired": {
+    "en": "Skill description is required",
+    "zh": "技能简介不能为空"
+   },
+   "error.create.bodyRequired": {
+    "en": "Skill body is required",
+    "zh": "技能正文不能为空"
+   },
+   "error.create.tooLarge": {
+    "en": "Skill content is too large",
+    "zh": "技能内容过长"
+   },
+   "error.create.conflict": {
+    "en": "A skill with the same name already exists: {name}",
+    "zh": "同名技能已存在: {name}"
+   },
+   "error.proto.forbidden": {
+    "en": "Forbidden mutation request (missing client marker)",
+    "zh": "禁止的修改请求（缺少客户端标记）"
+   },
+   "error.proto.contentType": {
+    "en": "Content type must be application/json",
+    "zh": "请求体必须是 application/json"
+   },
+   "error.proto.invalidParams": {
+    "en": "Invalid request parameters",
+    "zh": "请求参数无效"
+   },
+   "error.proto.bodyTooLarge": {
+    "en": "Request body too large",
+    "zh": "请求体过大"
+   },
+   "error.proto.invalidJson": {
+    "en": "Invalid JSON request body",
+    "zh": "请求体不是合法 JSON"
+   },
+   "error.proto.nonJson": {
+    "en": "Server returned a non-JSON response (HTTP {status})",
+    "zh": "服务端返回非 JSON 响应（HTTP {status}）"
+   },
+   "error.update.disabled": {
+    "en": "Online updates are disabled",
+    "zh": "在线更新已被禁用"
+   },
+   "error.catalog.query": {
+    "en": "The search query is invalid.",
+    "zh": "搜索关键词无效。"
+   },
+   "error.catalog.upstream": {
+    "en": "The catalog service is temporarily unavailable.",
+    "zh": "目录服务暂时不可用。"
+   },
+   "error.catalog.response": {
+    "en": "The catalog response is invalid or too large.",
+    "zh": "目录返回的数据无效或过大。"
+   },
+   "error.catalog.identity": {
+    "en": "The catalog skill identifier is invalid.",
+    "zh": "目录技能标识无效。"
+   },
+   "diagnostic.frontmatter.missing": {
+    "en": "Missing complete YAML frontmatter",
+    "zh": "缺少完整 YAML frontmatter"
+   },
+   "diagnostic.name.missing": {
+    "en": "Frontmatter is missing name",
+    "zh": "frontmatter 缺少 name"
+   },
+   "diagnostic.name.invalid": {
+    "en": "Skill name format is not supported by host (lowercase letters, numbers and hyphens only), cannot be enabled. To invoke it, specify an English name in the SKILL.md frontmatter (directory name can remain unchanged): {name}",
+    "zh": "宿主不支持此技能名称格式（仅支持英文小写字母、数字与连字符），无法启用。如需调用，请在 SKILL.md frontmatter 中指定英文 name（目录名可保留中文）：{name}"
+   },
+   "diagnostic.description.missing": {
+    "en": "Frontmatter is missing description",
+    "zh": "frontmatter 缺少 description"
+   },
+   "diagnostic.invocation.invalid": {
+    "en": "Invocation policy value is invalid",
+    "zh": "调用策略字段值无效"
+   },
+   "diagnostic.shadowed": {
+    "en": "Shadowed by higher-priority source {root}",
+    "zh": "被更高优先级来源 {root} 覆盖"
+   },
+   "action.enable": {
+    "en": "enable",
+    "zh": "启用"
+   },
+   "action.disable": {
+    "en": "disable",
+    "zh": "停用"
+   },
+   "action.create": {
+    "en": "create",
+    "zh": "创建"
+   },
+   "action.delete": {
+    "en": "delete",
+    "zh": "删除"
+   },
+   "action.restore": {
+    "en": "restore",
+    "zh": "恢复"
+   },
+   "action.toggle": {
+    "en": "enabling or disabling",
+    "zh": "启用或停用"
+   },
+   "scope.user": {
+    "en": "Global skills",
+    "zh": "全局技能"
+   },
+   "scope.project": {
+    "en": "Project skills",
+    "zh": "项目技能"
+   },
+   "scope.trash": {
+    "en": "Trash",
+    "zh": "回收站"
+   },
+   "scope.label": {
+    "en": "Skill manager views",
+    "zh": "技能管理视图"
+   },
+   "scope.userHint": {
+    "en": "Available across projects. Toggles only affect invocation in DSH.",
+    "zh": "跨项目可用。启停仅影响 DSH 中的调用。"
+   },
+   "scope.projectHint": {
+    "en": "View project skills by workspace. Toggles do not modify other agents’ source files.",
+    "zh": "按工作区查看项目技能。启停不修改其他 Agent 的源文件。"
+   },
+   "project.empty": {
+    "en": "No registered workspaces yet. Add one in the sidebar first.",
+    "zh": "还没有已登记的工作区。请先在侧栏添加工作区。"
+   },
+   "project.noSkills": {
+    "en": "Registered workspaces do not have skills yet.",
+    "zh": "已登记的工作区里还没有技能。"
+   },
+   "workspace.unavailable": {
+    "en": "Directory unavailable",
+    "zh": "目录不可用"
+   },
+   "workspace.missing": {
+    "en": "Directory missing",
+    "zh": "目录不存在"
+   },
+   "workspace.unreadable": {
+    "en": "No read permission",
+    "zh": "无读取权限"
+   },
+   "workspace.noSkills": {
+    "en": "No skills in this workspace yet.",
+    "zh": "这个工作区还没有技能。"
+   },
+   "workspace.loading": {
+    "en": "Loading…",
+    "zh": "正在读取…"
+   },
+   "workspace.loadFailed": {
+    "en": "Failed to load: {error}",
+    "zh": "读取失败：{error}"
+   },
+   "workspace.listFailed": {
+    "en": "Cannot read the workspace list: {error}",
+    "zh": "无法读取工作区列表：{error}"
+   },
+   "filter.status": {
+    "en": "Invocation status",
+    "zh": "调用状态"
+   },
+   "filter.statusAll": {
+    "en": "All statuses",
+    "zh": "全部状态"
+   },
+   "status.shadowedBy": {
+    "en": "Overridden by the same skill in {source}",
+    "zh": "被 {source} 中的同名技能覆盖"
+   },
+   "status.fallback.user": {
+    "en": "Currently using the global {source} copy.",
+    "zh": "当前使用全局 {source} 副本。"
+   },
+   "status.fallback.project": {
+    "en": "Currently using the project {source} copy.",
+    "zh": "当前使用项目 {source} 副本。"
+   },
+   "source.selectHint": {
+    "en": "Select a source to view its directory or turn the whole source off. Turning a source off only affects invocation in DSH and does not change files.",
+    "zh": "先选择一个来源，才能查看目录或关闭整个来源。关闭来源只影响 DSH 调用，不改文件。"
+   },
+   "import.global": {
+    "en": "Import skill",
+    "zh": "导入技能"
+   },
+   "category.batchAssigned": {
+    "en": "Added {count} skills to “{category}”. Files were not moved.",
+    "zh": "已将 {count} 个技能添加到“{category}”。文件未移动。"
+   },
+   "category.selectSkills": {
+    "en": "Add skills to “{name}”",
+    "zh": "添加技能到“{name}”"
+   },
+   "category.noAvailableSkills": {
+    "en": "No skills available to add",
+    "zh": "没有可添加的技能"
+   },
+   "category.addSkills": {
+    "en": "Add skills",
+    "zh": "添加技能"
+   },
+   "root.dsh": {
+    "en": "DSH skills",
+    "zh": "DSH"
+   },
+   "root.agents": {
+    "en": "Shared Agent",
+    "zh": "公共 Agent"
+   },
+   "root.ccswitch": {
+    "en": "CC Switch",
+    "zh": "CC Switch"
+   },
+   "root.projectDsh": {
+    "en": "DSH skills",
+    "zh": "DSH"
+   },
+   "root.projectAgents": {
+    "en": "Project Agent",
+    "zh": "项目 Agent"
+   },
+   "root.codex": {
+    "en": "Codex",
+    "zh": "Codex"
+   },
+   "root.claude": {
+    "en": "Claude Code",
+    "zh": "Claude Code"
+   },
+   "root.gemini": {
+    "en": "Gemini",
+    "zh": "Gemini"
+   },
+   "root.opencode": {
+    "en": "OpenCode",
+    "zh": "OpenCode"
+   },
+   "root.cursor": {
+    "en": "Cursor",
+    "zh": "Cursor"
+   },
+   "root.copilot": {
+    "en": "GitHub Copilot",
+    "zh": "GitHub Copilot"
+   },
+   "root.windsurf": {
+    "en": "Windsurf",
+    "zh": "Windsurf"
+   },
+   "root.windsurfUser": {
+    "en": "Windsurf (User Home)",
+    "zh": "Windsurf (用户目录)"
+   },
+   "root.trae": {
+    "en": "Trae",
+    "zh": "Trae"
+   },
+   "root.traeCn": {
+    "en": "Trae CN",
+    "zh": "Trae (国内版)"
+   },
+   "root.openclaw": {
+    "en": "OpenClaw",
+    "zh": "OpenClaw"
+   },
+   "root.clawdbot": {
+    "en": "OpenClaw (Legacy)",
+    "zh": "OpenClaw (旧目录)"
+   },
+   "root.roo": {
+    "en": "Roo",
+    "zh": "Roo"
+   },
+   "root.codebuddy": {
+    "en": "CodeBuddy",
+    "zh": "CodeBuddy"
+   },
+   "root.workbuddy": {
+    "en": "WorkBuddy",
+    "zh": "WorkBuddy"
+   },
+   "root.qoder": {
+    "en": "Qoder",
+    "zh": "Qoder"
+   },
+   "root.qoderCn": {
+    "en": "Qoder CN CLI",
+    "zh": "Qoder CN CLI"
+   },
+   "root.lingma": {
+    "en": "Qoder CN",
+    "zh": "Qoder CN"
+   },
+   "root.antigravity": {
+    "en": "Google Antigravity",
+    "zh": "Google Antigravity"
+   },
+   "group.label": {
+    "en": "Group by",
+    "zh": "分组方式"
+   },
+   "group.bySource": {
+    "en": "Source directory",
+    "zh": "按来源目录"
+   },
+   "group.byRepo": {
+    "en": "Source repository",
+    "zh": "按来源仓库"
+   },
+   "group.hint": {
+    "en": "Inside each source directory, verifiable records add a repository → directory hierarchy: install record → directory lock file → skill metadata; other sources are marked Unknown source. Directory names are not guessed.",
+    "zh": "在来源目录下按可核查的记录再分「仓库 → 仓库内目录」：安装记录 → 目录锁文件 → 技能元数据；没有记录的标为「来源未知」，不按目录名称猜测。"
+   },
+   "group.provenanceCount": {
+    "en": "{repos} repositories · {unknown} skills with unknown source",
+    "zh": "{repos} 个来源仓库 · {unknown} 个技能来源未知"
+   },
+   "group.unknownSource": {
+    "en": "Unknown source",
+    "zh": "来源未知"
+   },
+   "group.repoRoot": {
+    "en": "Repository root (no category)",
+    "zh": "仓库根目录（未分目录）"
+   },
+   "group.evidence.install": {
+    "en": "Install record",
+    "zh": "安装记录"
+   },
+   "group.evidence.lock": {
+    "en": "Directory lock file",
+    "zh": "目录锁文件"
+   },
+   "group.evidence.meta": {
+    "en": "Skill metadata",
+    "zh": "技能元数据"
+   },
+   "group.evidence.root": {
+    "en": "Directory fallback",
+    "zh": "目录落点"
+   },
+   "group.openRepo": {
+    "en": "Open {repo}",
+    "zh": "打开 {repo}"
+   },
+   "group.noRepo": {
+    "en": "No verifiable repository record; grouped by source directory.",
+    "zh": "没有可核查的仓库记录，按来源目录归类。"
+   },
+   "rootPath.edit": {
+    "en": "Change skills folder",
+    "zh": "修改技能目录"
+   },
+   "rootPath.title": {
+    "en": "Change the skills folder for {name}",
+    "zh": "修改「{name}」的技能目录"
+   },
+   "rootPath.manage": {
+    "en": "Source folders",
+    "zh": "来源目录"
+   },
+   "rootPath.source": {
+    "en": "Skill source",
+    "zh": "技能来源"
+   },
+   "rootPath.desc": {
+    "en": "Only changes where this plugin reads skills. No files are moved. External sources stay read-only; to change the agent's own folder, update that agent's configuration.",
+    "zh": "只改本插件读取的位置，不移动任何文件。外部来源仍然只读；要让该 Agent 自己换目录，请改它自己的配置。"
+   },
+   "rootPath.label": {
+    "en": "Skills folder (the parent of SKILL.md files)",
+    "zh": "技能目录（含 SKILL.md 的上一级）"
+   },
+   "rootPath.placeholder": {
+    "en": "e.g. D:\\skills\\codex",
+    "zh": "例如 D:\\skills\\codex"
+   },
+   "rootPath.browse": {
+    "en": "Browse…",
+    "zh": "浏览…"
+   },
+   "rootPath.pickUnavailable": {
+    "en": "No directory picker is available here; type the path instead.",
+    "zh": "当前环境没有可用的目录选择器，请直接输入路径。"
+   },
+   "rootPath.reset": {
+    "en": "Restore default",
+    "zh": "恢复默认"
+   },
+   "rootPath.save": {
+    "en": "Save",
+    "zh": "保存"
+   },
+   "rootPath.custom": {
+    "en": "Custom",
+    "zh": "自定义"
+   },
+   "rootPath.overrideTitle": {
+    "en": "Custom folder; default: {path}",
+    "zh": "自定义目录，默认：{path}"
+   },
+   "rootPath.defaultHint": {
+    "en": "Default folder: {path}",
+    "zh": "默认目录：{path}"
+   },
+   "rootPath.saved": {
+    "en": "Updated the skills folder for {name}.",
+    "zh": "已更新「{name}」的技能目录。"
+   },
+   "rootPath.resetDone": {
+    "en": "Restored the default folder for {name}.",
+    "zh": "已恢复「{name}」的默认目录。"
+   },
+   "error.rootPath.unsupported": {
+    "en": "This skill source does not support changing its folder: {root}",
+    "zh": "该技能来源不支持修改目录：{root}"
+   },
+   "error.rootPath.invalid": {
+    "en": "Invalid skills folder: {path}",
+    "zh": "技能目录无效：{path}"
+   },
+   "error.rootPath.absolute": {
+    "en": "The skills folder must be an absolute path: {path}",
+    "zh": "技能目录必须是绝对路径：{path}"
+   },
+   "error.rootPath.tooLong": {
+    "en": "The skills folder path is too long: {path}",
+    "zh": "技能目录路径过长：{path}"
+   },
+   "error.rootPath.notFound": {
+    "en": "The skills folder does not exist: {path}",
+    "zh": "技能目录不存在：{path}"
+   },
+   "error.rootPath.notDirectory": {
+    "en": "The skills folder is not a directory: {path}",
+    "zh": "技能目录不是文件夹：{path}"
+   },
+   "error.rootPath.overlap": {
+    "en": "The skills folder must not overlap another skill source: {path}",
+    "zh": "技能目录不能与其它技能来源重叠：{path}"
+   },
+   "error.rootPath.reserved": {
+    "en": "The skills folder must not overlap the manager's state folder: {path}",
+    "zh": "技能目录不能与技能管理器的状态目录重叠：{path}"
+   },
+   "warning.rootPath.invalid": {
+    "en": "Ignored an invalid skills folder setting: {path}",
+    "zh": "技能目录配置项无效，已忽略：{path}"
+   },
+   "warning.rootPath.corrupt": {
+    "en": "The skills folder settings could not be read; defaults are in use: {path}",
+    "zh": "技能目录配置不可读，已使用默认目录：{path}"
+   },
+   "warning.rootPath.missing": {
+    "en": "The custom skills folder does not exist: {path}",
+    "zh": "自定义技能目录不存在：{path}"
+   },
+   "customSource.title": {
+    "en": "Custom sources",
+    "zh": "自定义来源"
+   },
+   "customSource.add": {
+    "en": "Add source",
+    "zh": "添加来源"
+   },
+   "customSource.desc": {
+    "en": "Register skill folders for agents that are not in the built-in list. Read-only: nothing is moved or modified. You can also point at a product folder and scan for the skills folders inside it.",
+    "zh": "登记清单外的 Agent 技能目录：只读取，不移动也不改动第三方文件。也可以填产品总目录点「扫描子目录」，自动找出各子目录下的 skills。"
+   },
+   "customSource.path": {
+    "en": "Skills folder (the parent of SKILL.md files)",
+    "zh": "技能目录（含 SKILL.md 的上一级）"
+   },
+   "customSource.path.placeholder": {
+    "en": "e.g. D:\\tools\\my-agent\\skills",
+    "zh": "例如 D:\\tools\\my-agent\\skills"
+   },
+   "customSource.label": {
+    "en": "Display name (empty uses the folder name)",
+    "zh": "显示名（留空则用目录名）"
+   },
+   "customSource.label.placeholder": {
+    "en": "e.g. My Agent",
+    "zh": "例如 My Agent"
+   },
+   "customSource.scan": {
+    "en": "Scan subfolders",
+    "zh": "扫描子目录"
+   },
+   "customSource.scanning": {
+    "en": "Scanning…",
+    "zh": "扫描中…"
+   },
+   "customSource.scanResult": {
+    "en": "Found {count} skills folders under {path}",
+    "zh": "在 {path} 下找到 {count} 个技能目录"
+   },
+   "customSource.skillCount.one": {
+    "en": "{count} skill",
+    "zh": "{count} 个技能"
+   },
+   "customSource.skillCount.other": {
+    "en": "{count} skills",
+    "zh": "{count} 个技能"
+   },
+   "customSource.addOne": {
+    "en": "Add",
+    "zh": "添加"
+   },
+   "customSource.addAll": {
+    "en": "Add all",
+    "zh": "全部添加"
+   },
+   "customSource.added": {
+    "en": "Added {count} custom sources.",
+    "zh": "已添加 {count} 个自定义来源。"
+   },
+   "customSource.removed": {
+    "en": "Removed the custom source registration.",
+    "zh": "已移除该自定义来源的登记。"
+   },
+   "customSource.remove": {
+    "en": "Remove",
+    "zh": "移除登记"
+   },
+   "customSource.registered": {
+    "en": "Registered",
+    "zh": "已登记"
+   },
+   "customSource.conflict": {
+    "en": "Overlaps an existing source",
+    "zh": "与已有来源重叠"
+   },
+   "error.customSource.unknown": {
+    "en": "Unknown custom source: {root}",
+    "zh": "未登记的自定义来源：{root}"
+   },
+   "error.customSource.limit": {
+    "en": "Custom sources reached the limit: {limit}",
+    "zh": "自定义来源数量已达上限：{limit}"
+   },
+   "error.customSource.label": {
+    "en": "A custom source needs a display name: {path}",
+    "zh": "自定义来源必须有显示名：{path}"
+   },
+   "error.customSource.empty": {
+    "en": "No skill sources to add",
+    "zh": "没有要添加的技能来源"
+   },
+   "repo.catalog.unknownLocation": {
+    "en": "Location unknown",
+    "zh": "位置未知"
+   },
+   "repo.catalog.reassociate": {
+    "en": "Choose destination and reinstall to reassociate",
+    "zh": "选择位置并重关联安装"
+   },
+   "repo.catalog.unknownHint": {
+    "en": "Some legacy catalog installs have unknown locations. Find the skill and choose a destination to reinstall and reassociate.",
+    "zh": "有旧目录安装记录位置未知；找到对应技能后可选择位置重关联安装。"
+   },
+   "repo.catalog.loadMore": {
+    "en": "Load 10 more",
+    "zh": "再加载 10 条"
+   },
+   "repo.catalog.installRefreshWarning": {
+    "en": "Installed and enabled, but the list could not refresh. Reopen Discover Skills; do not install again.",
+    "zh": "技能已安装并启用，但列表刷新失败。请重新打开发现页；不要重复安装。"
+   },
+   "repo.catalog.uninstallRefreshWarning": {
+    "en": "Moved to trash, but the list could not refresh. Refresh the skill list or reopen Settings; do not uninstall again.",
+    "zh": "技能已移入回收站，但列表刷新失败。请刷新技能列表或重新打开设置页；不要重复卸载。"
+   },
+   "repo.installElsewhere": {
+    "en": "Install elsewhere",
+    "zh": "安装到其他位置"
+   },
+   "repo.destinationUnavailable": {
+    "en": "The original project is unregistered or unavailable. Re-register it in the sidebar and refresh to manage this copy.",
+    "zh": "原项目未登记或目录不可用，无法管理此副本。请在侧栏重新登记原项目后刷新。"
+   },
+   "repo.scope.user": {
+    "en": "Global",
+    "zh": "全局"
+   },
+   "repo.scope.project": {
+    "en": "Project",
+    "zh": "项目"
+   },
+   "repo.source.dsh": {
+    "en": "DSH",
+    "zh": "DSH"
+   },
+   "repo.source.agents": {
+    "en": "Shared Agent",
+    "zh": "Shared Agent"
+   },
+   "repo.refreshing": {
+    "en": "Checking updates…",
+    "zh": "正在检查更新…"
+   },
+   "repo.refreshed": {
+    "en": "Refresh and update check completed",
+    "zh": "刷新与更新检查完成"
+   },
+   "repo.partialRefreshFailed": {
+    "en": "Failed to check updates for some repositories ({names}); others completed.",
+    "zh": "部分仓库检查更新失败（{names}），其余已完成"
+   },
+   "repo.detailLoading": {
+    "en": "Loading skill instructions…",
+    "zh": "正在读取技能说明…"
+   },
+   "repo.local": {
+    "en": "Local",
+    "zh": "本机"
+   },
+   "repo.source": {
+    "en": "Installed from",
+    "zh": "安装来源"
+   },
+   "repo.update": {
+    "en": "Update available",
+    "zh": "可更新"
+   },
+   "repo.review": {
+    "en": "Review update",
+    "zh": "查看更新"
+   },
+   "repo.rollback": {
+    "en": "Restore previous version",
+    "zh": "恢复上一版"
+   },
+   "repo.confirmUpdate": {
+    "en": "Back up and update",
+    "zh": "备份并更新"
+   },
+   "repo.confirmRollback": {
+    "en": "Back up and restore",
+    "zh": "备份并恢复"
+   },
+   "repo.overwrite": {
+    "en": "Back up local edits and replace",
+    "zh": "备份本地修改并替换"
+   },
+   "repo.modified": {
+    "en": "Local edits detected. Replacement overwrites current files and keeps a complete backup for restoration.",
+    "zh": "检测到本地修改。替换会覆盖当前文件，原文件将完整备份，可恢复。"
+   },
+   "repo.noChanges": {
+    "en": "No file changes.",
+    "zh": "文件内容没有变化。"
+   },
+   "repo.added": {
+    "en": "Added",
+    "zh": "新增"
+   },
+   "repo.removed": {
+    "en": "Removed",
+    "zh": "删除"
+   },
+   "repo.modifiedFile": {
+    "en": "Modified",
+    "zh": "修改"
+   },
+   "repo.updating": {
+    "en": "Updating…",
+    "zh": "更新中…"
+   },
+   "repo.updateProgress": {
+    "en": "Verifying, backing up and replacing files. Please wait…",
+    "zh": "正在校验、备份并替换，请稍候…"
+   },
+   "repo.updateSuccess": {
+    "en": "Updated. Previous version backed up.",
+    "zh": "更新完成，已保留上一版备份。"
+   },
+   "repo.rollbackSuccess": {
+    "en": "Previous version restored.",
+    "zh": "已恢复上一版。"
+   },
+   "repo.manageUpdate": {
+    "en": "Manage updates",
+    "zh": "管理更新"
+   },
+   "error.repo.modified": {
+    "en": "Local edits detected. Review and confirm replacement with a backup.",
+    "zh": "存在本地修改，请预览并确认备份后替换。"
+   },
+   "scope.repositories": {
+    "en": "Discover Skills",
+    "zh": "发现技能"
+   },
+   "repo.add": {
+    "en": "Add repository",
+    "zh": "添加仓库"
+   },
+   "repo.manage": {
+    "en": "Manage repositories",
+    "zh": "管理仓库"
+   },
+   "repo.refresh": {
+    "en": "Refresh & check updates",
+    "zh": "刷新并检查更新"
+   },
+   "repo.save": {
+    "en": "Add and scan",
+    "zh": "添加并扫描"
+   },
+   "repo.subsource.github": {
+    "en": "Git Repos",
+    "zh": "Git 仓库"
+   },
+   "repo.subsource.skillsh": {
+    "en": "skills.sh",
+    "zh": "skills.sh"
+   },
+   "repo.subsource.clawhub": {
+    "en": "ClawHub",
+    "zh": "ClawHub"
+   },
+   "repo.subsource.popular": {
+    "en": "Top 100 by downloads",
+    "zh": "热门下载 Top 100"
+   },
+   "repo.catalog.states": {
+    "en": "All statuses",
+    "zh": "全部状态"
+   },
+   "repo.catalog.uninstalled": {
+    "en": "Not installed",
+    "zh": "未安装"
+   },
+   "repo.catalog.searchClawhub": {
+    "en": "Search ClawHub skills",
+    "zh": "搜索 ClawHub 技能"
+   },
+   "repo.catalog.searchLoading": {
+    "en": "Searching ClawHub…",
+    "zh": "正在搜索 ClawHub…"
+   },
+   "repo.catalog.searchEmpty": {
+    "en": "No matching ClawHub skills were found.",
+    "zh": "没有找到匹配的 ClawHub 技能。"
+   },
+   "repo.catalog.searchError": {
+    "en": "ClawHub search failed. Please retry.",
+    "zh": "ClawHub 搜索失败，请重试。"
+   },
+   "repo.catalog.searchSkillsh": {
+    "en": "Search skills.sh",
+    "zh": "搜索 skills.sh 技能"
+   },
+   "repo.catalog.skillshLoading": {
+    "en": "Searching skills.sh…",
+    "zh": "正在搜索 skills.sh…"
+   },
+   "repo.catalog.skillshEmpty": {
+    "en": "No matching skills.sh skills were found.",
+    "zh": "没有找到匹配的 skills.sh 技能。"
+   },
+   "repo.catalog.skillshError": {
+    "en": "skills.sh search failed. Please retry.",
+    "zh": "skills.sh 搜索失败，请重试。"
+   },
+   "repo.sort.installs": {
+    "en": "Installs: high to low",
+    "zh": "安装量从高到低"
+   },
+   "repo.sort.name": {
+    "en": "Name A–Z",
+    "zh": "名称 A-Z"
+   },
+   "repo.subsource.catalogNote": {
+    "en": "ClawHub download ranking · Up to 100; sort only displayed items",
+    "zh": "ClawHub 下载量榜 · 最多 100 条，仅对当前显示条目排序"
+   },
+   "repo.catalog.empty": {
+    "en": "No matching skills were returned by ClawHub.",
+    "zh": "ClawHub 当前没有匹配的技能。"
+   },
+   "repo.catalog.loading": {
+    "en": "Loading ClawHub ranking…",
+    "zh": "正在加载 ClawHub 榜单…"
+   },
+   "repo.catalog.loadError": {
+    "en": "Failed to load the ClawHub ranking. Check your connection and retry.",
+    "zh": "ClawHub 榜单加载失败。请检查网络后重试。"
+   },
+   "repo.catalog.retry": {
+    "en": "Retry",
+    "zh": "重试"
+   },
+   "repo.catalog.loadingMore": {
+    "en": "Loading more…",
+    "zh": "正在加载更多…"
+   },
+   "repo.catalog.downloads": {
+    "en": "downloads",
+    "zh": "下载"
+   },
+   "repo.catalog.installs": {
+    "en": "installs",
+    "zh": "安装"
+   },
+   "repo.catalog.stars": {
+    "en": "stars",
+    "zh": "星标"
+   },
+   "repo.hint": {
+    "en": "Discover skills from subscribed Git repositories or community registries, and install them to user DSH skills or Shared Agent, or a registered project's .dsh/skills.",
+    "zh": "从已订阅的 Git 仓库或第三方目录发现技能，安装到用户目录的 DSH skills 或 Shared Agent，或已登记项目的 .dsh/skills。"
+   },
+   "repo.footer": {
+    "en": "Refresh checks repositories and skill updates without replacing local files. Historical backups are not cleaned automatically and use additional disk space.",
+    "zh": "刷新会检查仓库与技能更新，不会自动替换本地文件。历史备份不会自动清理，占用空间会随更新增加。"
+   },
+   "repo.search": {
+    "en": "Search repository skills",
+    "zh": "搜索仓库技能"
+   },
+   "repo.all": {
+    "en": "All repositories",
+    "zh": "全部仓库"
+   },
+   "repo.states": {
+    "en": "All statuses",
+    "zh": "全部状态"
+   },
+   "repo.available": {
+    "en": "Available",
+    "zh": "可安装"
+   },
+   "repo.installed": {
+    "en": "Installed",
+    "zh": "已安装"
+   },
+   "repo.conflict": {
+    "en": "Name conflict",
+    "zh": "同名冲突"
+   },
+   "repo.invalid": {
+    "en": "Invalid format",
+    "zh": "格式无效"
+   },
+   "repo.install": {
+    "en": "Install",
+    "zh": "安装"
+   },
+   "repo.detail": {
+    "en": "Details",
+    "zh": "详情"
+   },
+   "repo.installing": {
+    "en": "Installing…",
+    "zh": "安装中…"
+   },
+   "repo.installProgress": {
+    "en": "Reading and verifying skill files. Please wait…",
+    "zh": "正在读取并校验技能文件，请稍候…"
+   },
+   "repo.installSuccess": {
+    "en": "Installed and enabled. Invoke it from the slash menu.",
+    "zh": "安装成功并已启用，可在对话中用斜杠调用。"
+   },
+   "repo.installDestination": {
+    "en": "Installation destination",
+    "zh": "安装位置"
+   },
+   "repo.rootDsh": {
+    "en": "DSH skills",
+    "zh": "DSH skills"
+   },
+   "repo.rootAgents": {
+    "en": "Shared Agent",
+    "zh": "Shared Agent"
+   },
+   "repo.rootDshHint": {
+    "en": "For DSH only. The path uses your current DSH_HOME.",
+    "zh": "仅供 DSH 使用，路径以当前 DSH_HOME 为准。"
+   },
+   "repo.rootExternalHint": {
+    "en": "Other agents using this directory can read this skill too.",
+    "zh": "使用该目录的其他 Agent 也能读取此技能。"
+   },
+   "repo.installLocationsHint": {
+    "en": "User directories offer DSH skills or Shared Agent; registered projects write only to .dsh/skills. The chooser shows actual paths. Missing directories are created after confirmation. Unsafe paths cannot be selected.",
+    "zh": "用户目录可选 DSH skills 或 Shared Agent；已登记项目仅写入 .dsh/skills。选择器显示实际路径。缺少的目录会在确认安装后创建。不安全的路径不可选。"
+   },
+   "repo.uninstall": {
+    "en": "Uninstall",
+    "zh": "卸载"
+   },
+   "repo.confirmUninstall": {
+    "en": "Move to Trash",
+    "zh": "移至回收站"
+   },
+   "repo.uninstallHint": {
+    "en": "Move only this repository’s tracked installed copy, including local edits, to Trash. You can restore it from Trash later.",
+    "zh": "仅将此仓库已跟踪的安装副本移至回收站，包括本地修改。之后可在回收站恢复。"
+   },
+   "repo.uninstallExternalWarning": {
+    "en": "Uninstalling this skill also affects other agents that use the selected directory.",
+    "zh": "卸载该技能也会影响使用所选目录的其他 Agent。"
+   },
+   "repo.uninstalling": {
+    "en": "Uninstalling…",
+    "zh": "卸载中…"
+   },
+   "repo.uninstallProgress": {
+    "en": "Moving the installed skill to Trash. Please wait…",
+    "zh": "正在将已安装的技能移至回收站，请稍候…"
+   },
+   "repo.uninstallSuccess": {
+    "en": "Skill moved to Trash. You can restore it from Trash.",
+    "zh": "技能已移至回收站，可在回收站恢复。"
+   },
+   "repo.empty": {
+    "en": "No repositories yet. Add a Git repository to get started.",
+    "zh": "还没有技能仓库，添加一个 Git 仓库开始。"
+   },
+   "repo.noSkills": {
+    "en": "No matching skills. Refresh the repository or adjust your filters.",
+    "zh": "没有匹配的技能。可刷新仓库或调整筛选。"
+   },
+   "repo.url": {
+    "en": "Repository URL",
+    "zh": "仓库地址"
+   },
+   "repo.urlPlaceholder": {
+    "en": "owner/repo or full Git repository URL",
+    "zh": "owner/repo 或完整 Git 地址"
+   },
+   "repo.ref": {
+    "en": "Branch or tag (optional)",
+    "zh": "分支或标签（可选）"
+   },
+   "repo.directory": {
+    "en": "Skill subdirectory (optional)",
+    "zh": "技能子目录（可选）"
+   },
+   "repo.defaultBranch": {
+    "en": "Leave empty for the default branch",
+    "zh": "留空使用默认分支"
+   },
+   "repo.defaultBranchLabel": {
+    "en": "default branch",
+    "zh": "默认分支"
+   },
+   "repo.directoryHint": {
+    "en": "For example: skills. Leave empty to scan the repository.",
+    "zh": "例如 skills，留空扫描整个仓库"
+   },
+   "repo.remove": {
+    "en": "Remove repository",
+    "zh": "移除仓库"
+   },
+   "repo.removeHint": {
+    "en": "This removes the subscription only. Installed skills are kept.",
+    "zh": "仅移除仓库订阅，已安装的技能会保留。"
+   },
+   "repo.removeConfirm": {
+    "en": "Confirm removal",
+    "zh": "确认移除"
+   },
+   "repo.cancel": {
+    "en": "Cancel",
+    "zh": "取消"
+   },
+   "repo.close": {
+    "en": "Close",
+    "zh": "关闭"
+   },
+   "repo.loading": {
+    "en": "Working…",
+    "zh": "处理中…"
+   },
+   "repo.success": {
+    "en": "Completed",
+    "zh": "操作完成"
+   },
+   "repo.installHint": {
+    "en": "Skills may include scripts. Read the instructions and trust the source before installing. Resources are copied; scripts are not executed.",
+    "zh": "技能可能包含脚本，请先查看说明并确认信任来源。安装会保留资源文件，不会执行脚本。"
+   },
+   "repo.commit": {
+    "en": "Snapshot version",
+    "zh": "扫描版本"
+   },
+   "repo.notScanned": {
+    "en": "Not scanned yet",
+    "zh": "尚未扫描"
+   },
+   "repo.updated": {
+    "en": "Last refreshed",
+    "zh": "上次刷新"
+   },
+   "repo.copyBody": {
+    "en": "Copy body",
+    "zh": "复制正文"
+   },
+   "repo.copied": {
+    "en": "Copied",
+    "zh": "已复制"
+   },
+   "repo.copyFailed": {
+    "en": "Copy failed",
+    "zh": "复制失败"
+   },
+   "error.repo.tooLarge": {
+    "en": "Repository exceeds size limit. Choose a smaller repository.",
+    "zh": "仓库超过大小限制，请选择较小的技能仓库。"
+   },
+   "error.repo.transientTooLarge": {
+    "en": "Repository transient download size exceeds limit (including Git objects). Choose a smaller repository.",
+    "zh": "仓库临时下载体积过大（包含 Git 历史对象），请选择较小的技能仓库。"
+   },
+   "error.repo.disk": {
+    "en": "Not enough free disk space to check out this repository. Free up space and retry.",
+    "zh": "磁盘剩余空间不足，无法检出该仓库。请清理磁盘空间后重试。"
+   },
+   "error.repo.noGit": {
+    "en": "Git command-line tool not found. Please install Git and retry.",
+    "zh": "未检测到 Git 命令行工具，请先安装 Git 后重试。"
+   },
+   "error.repo.installState": {
+    "en": "Skill files were preserved but source tracking could not be saved. Restore disk write access and reopen Repositories to verify files and recover the record.",
+    "zh": "技能文件已保留，但来源状态未确认。请恢复磁盘写入后重新打开仓库页，系统会校验文件并恢复记录。"
+   },
+   "error.repo.capacity": {
+    "en": "Source tracking exceeds 16 MiB. Remove unneeded Trash records or legacy identities first. Active installation copies are kept.",
+    "zh": "安装来源状态超过 16 MiB。请先清理不需要的回收记录或旧身份，仍有效的安装副本会保留。"
+   },
+   "error.repo.invalid": {
+    "en": "Invalid repository URL, path or contents. Check the input and repository size.",
+    "zh": "仓库地址、路径或内容无效，请检查输入及仓库大小。"
+   },
+   "error.repo.network": {
+    "en": "Repository request failed. Check your connection or retry later. The previous catalog was kept.",
+    "zh": "仓库访问失败，请检查网络或稍后重试。上次列表已保留。"
+   },
+   "error.repo.state": {
+    "en": "Repository state is corrupt or unreadable. Preserve the file and repair it before retrying.",
+    "zh": "仓库状态文件损坏或无法读取，请保留文件并修复后重试。"
+   },
+   "error.repo.conflict": {
+    "en": "A skill with this name exists or installation failed. Local files were not overwritten.",
+    "zh": "同名技能已存在或安装失败，本地文件未被覆盖。"
+   },
+   "error.repo.enableState": {
+    "en": "The copied skill was removed because its enabled state could not be saved. Restore disk write access and install again.",
+    "zh": "技能文件已撤销，但启用状态无法写入。请恢复磁盘写入后重试安装。"
+   },
+   "dest.scope": {
+    "en": "Scope",
+    "zh": "范围"
+   },
+   "dest.scope.user": {
+    "en": "User directory",
+    "zh": "用户目录"
+   },
+   "dest.scope.workspace": {
+    "en": "Specific workspace",
+    "zh": "指定工作区"
+   },
+   "dest.workspace": {
+    "en": "Workspace",
+    "zh": "工作区"
+   },
+   "dest.workspace.placeholder": {
+    "en": "Select a workspace",
+    "zh": "请选择工作区"
+   },
+   "dest.workspace.unavailable": {
+    "en": "{name} (directory unavailable)",
+    "zh": "{name}（目录不可用）"
+   },
+   "dest.pickFirst": {
+    "en": "Select a registered workspace first. No directory is created before you confirm.",
+    "zh": "先选择一个已登记工作区。确认前不会创建目录。"
+   },
+   "dest.empty": {
+    "en": "No registered workspaces yet. Add one in the sidebar, then come back.",
+    "zh": "还没有已登记的工作区。请先在侧栏添加，再回到这里选择。"
+   },
+   "dest.location": {
+    "en": "Location",
+    "zh": "位置"
+   },
+   "dest.location.dsh": {
+    "en": "DSH skills",
+    "zh": "DSH skills"
+   },
+   "dest.location.agents": {
+    "en": "Shared Agent",
+    "zh": "Shared Agent"
+   },
+   "dest.location.agentsOff": {
+    "en": "Workspaces support DSH skills only.",
+    "zh": "工作区只支持 DSH skills。"
+   },
+   "dest.projectNote": {
+    "en": "This is written into the project and may be committed to its repository.",
+    "zh": "会写进这个项目，可能被提交到仓库。"
+   },
+   "dest.createdInWorkspace": {
+    "en": "Created in the selected workspace. It appears in sessions of that workspace.",
+    "zh": "已创建在所选工作区。要在该工作区的会话里才会看到。"
+   },
+   "entry.location.title": {
+    "en": "Entry placement",
+    "zh": "入口展示位置"
+   },
+   "entry.location.desc": {
+    "en": "Choose where to show the entry (at least one is retained to avoid losing access).",
+    "zh": "选择技能管理入口的展示位置（至少保留一处，防止无法打开面板）。"
+   },
+   "entry.location.both": {
+    "en": "Both",
+    "zh": "两边显示"
+   },
+   "entry.location.sidebar": {
+    "en": "Sidebar only",
+    "zh": "仅侧边栏"
+   },
+   "entry.location.settings": {
+    "en": "Settings only",
+    "zh": "仅设置"
+   },
+   "sidebar.entry.title": {
+    "en": "Sidebar entry",
+    "zh": "侧边栏入口"
+   },
+   "sidebar.entry.desc": {
+    "en": "Show Skills below Plugins in the sidebar. The Settings entry stays either way.",
+    "zh": "在侧栏「插件」下方显示技能。设置里的入口不变。"
+   },
+   "sidebar.entry.toggle": {
+    "en": "Toggle sidebar entry",
+    "zh": "切换侧边栏入口"
+   },
+   "update.entry.title": {
+    "en": "Online updates",
+    "zh": "在线更新"
+   },
+   "update.entry.desc": {
+    "en": "Allow checking and installing new versions online. Hides the update entry when disabled.",
+    "zh": "允许检查并在线安装技能管理器的新版本。关闭后隐藏更新入口。"
+   },
+   "update.entry.toggle": {
+    "en": "Toggle online updates",
+    "zh": "切换在线更新"
+   },
+   "update.entry.locked": {
+    "en": "Online updates are disabled by the host configuration.",
+    "zh": "在线更新已被宿主配置禁用"
+   }
+  }
+ },
+ "englishText": {
+  "Load and safely manage local Agent Skills.": {
+   "zh": "统一加载并安全管理本机 Agent Skills。"
+  }
+ }
+}
