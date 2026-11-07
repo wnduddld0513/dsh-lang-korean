@@ -81,7 +81,7 @@ dsh plugin --profile desktop remove dsh-lang-korean
 
 ## 번역 갱신
 
-DeepSeek Harness나 지원 플러그인을 업데이트한 뒤 다음 순서로 진행합니다.
+DeepSeek Harness나 지원 플러그인을 업데이트한 뒤 다음 순서로 진행합니다. `i18n/`과 `scripts/`는 설치본에 포함되지 않으므로, 저장소를 `git clone`한 사본에서 실행합니다.
 
 1. `node scripts/extract.mjs` — 설치본의 ja/en 원문을 `i18n/dsh/source.json`에 다시 기록합니다. 사전 등록에 잡히지 않은 일본어 문자열이 있으면 경고로 표시합니다.
 2. `node scripts/extract-plugins.mjs` — 프로필(`~/.dsh/profiles/desktop/node_modules`)에 설치된 지원 플러그인의 영어 원문을 `i18n/<언어팩>/source.json`에 다시 기록합니다.
