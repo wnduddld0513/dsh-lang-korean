@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "韩语语言包",
-    "description": "以韩语显示 DeepSeek Harness 界面、内置插件的名称和说明以及部分第三方插件。每个语言包都可以在设置中单独开关。"
+    "description": "以韩语显示 DeepSeek Harness 界面以及内置插件的名称和说明。可在插件设置中开关。"
   }
 }

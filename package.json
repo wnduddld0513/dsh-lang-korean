@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Korean language pack for DeepSeek Harness: the interface copy and built-in plugin titles and descriptions, each pack switchable in Settings.",
+  "description": "Korean language pack for DeepSeek Harness: the interface copy and built-in plugin titles and descriptions, switchable in the plugin settings.",
   "license": "MIT",
   "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "locale", "korean", "i18n"],
   "exports": {
@@ -15,7 +15,7 @@
   "files": [
     "index.js",
     "lib/client.js",
-    "lib/client.*.js",
+    "lib/client.dsh-ko.js",
     "cordis.patch.yml",
     "locale/*.json",
     "README.md"

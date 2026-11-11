@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Korean Language Pack",
-    "description": "Shows the DeepSeek Harness interface, built-in plugin titles and descriptions, and selected third-party plugins in Korean. Each pack can be switched on or off in Settings."
+    "description": "Shows the DeepSeek Harness interface and built-in plugin titles and descriptions in Korean. It can be switched on or off in the plugin settings."
   }
 }
