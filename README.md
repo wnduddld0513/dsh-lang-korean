@@ -1,4 +1,4 @@
-# dsh-lang-korean
+# dsh-locale-ko
 
 DeepSeek Harness 한국어 언어팩입니다. 공식 로캘 API(`ctx.locale.addLanguage`, `ctx.locale.register(ns, 'ko', dict)`)로 한국어를 등록하며, 설치본 파일은 건드리지 않습니다.
 
@@ -21,7 +21,7 @@ DeepSeek Harness 한국어 언어팩입니다. 공식 로캘 API(`ctx.locale.add
 ### GitHub에서 설치
 
 ```
-dsh plugin --profile desktop add github:wnduddld0513/dsh-lang-korean
+dsh plugin --profile desktop add github:wnduddld0513/dsh-locale-ko
 ```
 
 ### 로컬 사본에서 설치
@@ -40,15 +40,15 @@ dsh plugin --profile desktop add link:<클론한 디렉터리의 절대 경로>
 ### 설치 후
 
 1. DeepSeek Harness를 다시 시작합니다.
-2. 사이드바 **플러그인**에서 `dsh-lang-korean` 번들이 켜져 있는지 확인합니다. 꺼져 있으면 켭니다.
+2. 사이드바 **플러그인**에서 `dsh-locale-ko` 번들이 켜져 있는지 확인합니다. 꺼져 있으면 켭니다.
 3. 같은 항목의 설정을 열고 **DeepSeek Harness 한글화** 스위치를 켭니다. 켜는 순간 화면이 한국어로 바뀝니다.
 4. 계속 한국어로 쓰려면 설정 → 일반 → 언어에서 `한국어`를 고릅니다. 앱을 다시 시작해도 유지됩니다.
 
 ### 업데이트
 
 ```
-dsh plugin --profile desktop remove dsh-lang-korean
-dsh plugin --profile desktop add github:wnduddld0513/dsh-lang-korean
+dsh plugin --profile desktop remove dsh-locale-ko
+dsh plugin --profile desktop add github:wnduddld0513/dsh-locale-ko
 ```
 
 git 의존성은 설치 시점의 커밋에 고정됩니다. 그래서 위처럼 지웠다가 다시 넣으면 최신 커밋을 받습니다. 링크 설치였다면 `git pull` 후 앱만 다시 시작하면 됩니다.
@@ -56,7 +56,7 @@ git 의존성은 설치 시점의 커밋에 고정됩니다. 그래서 위처럼
 ### 제거
 
 ```
-dsh plugin --profile desktop remove dsh-lang-korean
+dsh plugin --profile desktop remove dsh-locale-ko
 ```
 
 ## 알려진 제한

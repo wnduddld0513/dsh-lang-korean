@@ -1,7 +1,7 @@
 /**
- * dsh-lang-korean — Host half.
+ * dsh-locale-ko — Host half.
  *
- * Owns the `lang-korean` settings namespace: the switch of the translation pack. The Client half reads
+ * Owns the `locale-ko` settings namespace: the switch of the translation pack. The Client half reads
  * it through `configForms` and registers or withdraws the Korean dictionaries; nothing model-facing
  * is registered.
  */
@@ -22,7 +22,7 @@ async function load(specifier) {
 
 const z = (await load('@deepseek-ai/schemastery')).default
 
-export const name = 'lang-korean'
+export const name = 'locale-ko'
 
 /** Volatile fields are switched on this bundle's Plugins page and apply without a remount. */
 export const Config = z.object({

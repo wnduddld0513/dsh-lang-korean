@@ -1,5 +1,5 @@
 # dsh bundle patch: inserts this language pack into a profile's layer stack. Its packs are switched
 # on this bundle's Plugins page; switching the bundle off there removes the row and the Korean language.
 - insert:
-    - id: lang-korean
-      name: 'dsh-lang-korean'
+    - id: locale-ko
+      name: 'dsh-locale-ko'
