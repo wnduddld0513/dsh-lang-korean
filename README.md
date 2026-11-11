@@ -1,10 +1,10 @@
 # dsh-locale-ko
 
-DeepSeek Harness 한국어 언어팩입니다. 공식 로캘 API(`ctx.locale.addLanguage`, `ctx.locale.register(ns, 'ko', dict)`)로 한국어를 등록하며, 설치본 파일은 건드리지 않습니다.
+DeepSeek Harness 한국어 언어팩입니다. locale API(`ctx.locale.addLanguage`, `ctx.locale.register(ns, 'ko', dict)`)로 한국어를 등록하며, 설치본 파일은 건드리지 않습니다.
 
 ## 사용
 
-사이드바 **플러그인** 페이지에서 이 번들의 설정을 열면 **DeepSeek Harness 한글화** 스위치가 있습니다(설정 필드 `lang-korean.dsh`, 기본값 켜짐). 공식 패키지의 화면 문구 사전 전체와 내장 플러그인 이름·설명을 한국어로 표시합니다. 서드파티 플러그인은 번역하지 않으며, 각 플러그인이 제공하는 언어로 나옵니다.
+사이드바 **플러그인** 페이지에서 이 번들의 설정을 열면 **DeepSeek Harness 한글화** 스위치가 있습니다(설정 필드 `locale-ko.dsh`, 기본값 켜짐). 공식 패키지의 화면 문구 사전 전체와 내장 플러그인 이름·설명을 한국어로 표시합니다. 서드파티 플러그인은 번역하지 않으며, 각 플러그인이 제공하는 언어로 나옵니다.
 
 스위치를 켜면 사전 청크(`lib/client.dsh-ko.js`)를 불러온 뒤 한국어로 전환합니다. 끄면 모든 등록을 해제하고, 일반 → 언어에서 고른 언어로 돌아갑니다. 설정값은 프로필의 `cordis.patch.yml`에 저장됩니다.
 
@@ -29,13 +29,13 @@ dsh plugin --profile desktop add github:wnduddld0513/dsh-locale-ko
 코드를 고쳐 쓰거나 번역을 직접 손볼 때 씁니다. 링크 설치라 파일을 고치고 앱만 다시 시작하면 반영됩니다.
 
 ```
-git clone https://github.com/wnduddld0513/dsh-lang-korean
+git clone https://github.com/wnduddld0513/dsh-locale-ko
 dsh plugin --profile desktop add link:<클론한 디렉터리의 절대 경로>
 ```
 
 ### 플러그인 페이지에서 설치
 
-사이드바 **플러그인** → **플러그인 추가**에 `https://github.com/wnduddld0513/dsh-lang-korean` 또는 로컬 경로를 넣어도 됩니다.
+사이드바 **플러그인** → **플러그인 추가**에 `https://github.com/wnduddld0513/dsh-locale-ko` 또는 로컬 경로를 넣어도 됩니다.
 
 ### 설치 후
 
@@ -58,11 +58,6 @@ git 의존성은 설치 시점의 커밋에 고정됩니다. 그래서 위처럼
 ```
 dsh plugin --profile desktop remove dsh-locale-ko
 ```
-
-## 알려진 제한
-
-- `dsh-purge-community`도 `ko` 언어를 등록합니다. 그 플러그인이 나중에 로드되면 중복 등록으로 오류가 날 수 있습니다.
-- 서드파티 플러그인의 화면 문구는 번역 대상이 아닙니다.
 
 ## 번역 갱신
 
